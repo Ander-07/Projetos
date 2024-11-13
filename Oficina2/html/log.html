@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="menu">
+        <a href="../index.html">Home</a>
+        <a href="hist.html">História</a>
+        <a href="geo.html">Geografia</a>
+        <a href="tur.html">Turismo</a>
+        <a href="log.html">Login</a>
+    </div>
+    <hr><br>
+    <div class="container">
+    <form>
+        <fieldset>
+        <legend><h2>Login</h2></legend>
+
+        <label for="pnome">Nome:</label>
+        <input type="text" id="first" name="first"><br><br>
+        <label for="snome">Email:</label>
+        <input type="text" id="second" name="second">
+        <input type="button" id="cat" value="enviar">
+        </fieldset>
+    </form>
+    </div>
+    <script>
+        const cat=document.getElementById('cat')
+        const first=document.getElementById('first')
+        const second=document.getElementById('second')
+        cat.onclick=function(){
+            alert("Olá, "+ first.value + ", confira seu email: " + second.value)
+        }
+    </script>
+</body>
+</html>
